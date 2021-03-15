@@ -1,0 +1,142 @@
+{
+    "status": 0,
+    "message": "ok",
+    "result_type": "poi_type",
+    "results": [
+        {
+            "name": "光明",
+            "location": {
+                "lat": 22.761307,
+                "lng": 113.904048
+            },
+            "address": "光明区",
+            "province": "广东省",
+            "city": "深圳市",
+            "area": "光明区",
+            "detail": 1,
+            "uid": "dfa486cdece56ec4fda778af"
+        },
+        {
+            "name": "光明城站",
+            "location": {
+                "lat": 22.738209,
+                "lng": 113.960846
+            },
+            "address": "深圳市光明区茶林路",
+            "province": "广东省",
+            "city": "深圳市",
+            "area": "光明区",
+            "street_id": "c1273442fca536effea77856",
+            "detail": 1,
+            "uid": "c1273442fca536effea77856"
+        },
+        {
+            "name": "光明街道",
+            "location": {
+                "lat": 22.754413,
+                "lng": 113.942728
+            },
+            "address": "广东省深圳市光明区建安一路185号",
+            "province": "广东省",
+            "city": "深圳市",
+            "area": "光明区",
+            "street_id": "247f6cd35b8de87290114cc8",
+            "detail": 1,
+            "uid": "e024b50f6158349738e4a677"
+        },
+        {
+            "name": "光明",
+            "location": {
+                "lat": 22.777384,
+                "lng": 113.951588
+            },
+            "address": "地铁6号线",
+            "province": "广东省",
+            "city": "深圳市",
+            "area": "光明区",
+            "detail": 1,
+            "uid": "543fcebc6be2fe06d72ce2a3"
+        },
+        {
+            "name": "光明1号",
+            "location": {
+                "lat": 22.742666,
+                "lng": 113.934892
+            },
+            "address": "深圳市光明区同惠路与科农路交叉路口往西南约100米",
+            "province": "广东省",
+            "city": "深圳市",
+            "area": "光明区",
+            "street_id": "471a35e3baa208520e3ddae4",
+            "detail": 1,
+            "uid": "471a35e3baa208520e3ddae4"
+        },
+        {
+            "name": "光明区",
+            "location": {
+                "lat": 22.754466,
+                "lng": 113.94256
+            },
+            "address": "广东省深圳市",
+            "province": "广东省",
+            "city": "深圳市",
+            "area": "",
+            "detail": 0,
+            "uid": "53a32812c7dc4b206da3cc5e"
+        },
+        {
+            "name": "大仟里购物中心(光明店)",
+            "location": {
+                "lat": 22.782059,
+                "lng": 113.900051
+            },
+            "address": "深圳市光明区马田街道合水口社区松白路4699号",
+            "province": "广东省",
+            "city": "深圳市",
+            "area": "光明区",
+            "telephone": "4000133999",
+            "detail": 1,
+            "uid": "6b0a5545028bce51ba17e7b2"
+        },
+        {
+            "name": "光明",
+            "location": {
+                "lat": 22.574683,
+                "lng": 113.918266
+            },
+            "address": "深圳市宝安区公园路与兴华二路交叉路口往南约50米(宝湖居南侧)",
+            "province": "广东省",
+            "city": "深圳市",
+            "area": "宝安区",
+            "detail": 1,
+            "uid": "6abddfc088e1120b3010af04"
+        },
+        {
+            "name": "光明",
+            "location": {
+                "lat": 22.550336,
+                "lng": 114.117845
+            },
+            "address": "深圳市罗湖区宝安南路2014号振业大厦23层D",
+            "province": "广东省",
+            "city": "深圳市",
+            "area": "罗湖区",
+            "street_id": "39bcac4281d42c784afd3f52",
+            "detail": 1,
+            "uid": "39bcac4281d42c784afd3f52"
+        },
+        {
+            "name": "光明中心站",
+            "location": {
+                "lat": 22.768529,
+                "lng": 113.951028
+            },
+            "address": "B949路;B966路;E39路;M206路;M215路;M356路;M451路;M525路;b963路;m218路;m525路;m532路;高快巴士25路;高快巴士33路;光明假日接驳专线2号;光明假日接驳专线3号;莞747路",
+            "province": "广东省",
+            "city": "深圳市",
+            "area": "光明区",
+            "detail": 0,
+            "uid": "63c20d02f5b0267eb4265596"
+        }
+    ]
+}

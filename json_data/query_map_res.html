@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_12a7c81e60fb4054a52d57b51b60fae2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_12a7c81e60fb4054a52d57b51b60fae2" ></div>
+        
+</body>
+<script>    
+    
+            var map_12a7c81e60fb4054a52d57b51b60fae2 = L.map(
+                "map_12a7c81e60fb4054a52d57b51b60fae2",
+                {
+                    center: [22.758114, 113.89387],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    title: "Point Query Route",
+                }
+            );
+            L.control.scale().addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+
+            
+
+        
+    
+            var tile_layer_cbdab518aea6490983e14920ee20b026 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+        
+    
+                var lat_lng_popup_4c30c26c33b04fc6a2b123ab4d687c1f = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_4c30c26c33b04fc6a2b123ab4d687c1f
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_12a7c81e60fb4054a52d57b51b60fae2);
+                    }
+                map_12a7c81e60fb4054a52d57b51b60fae2.on('click', latLngPop);
+            
+    
+            var marker_1fbf16fa85c6405a948828d983dff602 = L.marker(
+                [22.758114, 113.89387],
+                {}
+            ).addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+        
+    
+            var icon_0b12866fda774460aeb1f03167c94e8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1fbf16fa85c6405a948828d983dff602.setIcon(icon_0b12866fda774460aeb1f03167c94e8b);
+        
+    
+        var popup_9892a33a23a54a48898ea62159284df8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7d44860db0047e699020bc2706b0441 = $(`<div id="html_e7d44860db0047e699020bc2706b0441" style="width: 100.0%; height: 100.0%;">Point1光明区 光明</div>`)[0];
+            popup_9892a33a23a54a48898ea62159284df8.setContent(html_e7d44860db0047e699020bc2706b0441);
+        
+
+        marker_1fbf16fa85c6405a948828d983dff602.bindPopup(popup_9892a33a23a54a48898ea62159284df8)
+        ;
+
+        
+    
+    
+            marker_1fbf16fa85c6405a948828d983dff602.bindTooltip(
+                `<div>
+                     Click me for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9724031cff245b896cd42c923d7e8d4 = L.marker(
+                [22.735416, 113.950575],
+                {}
+            ).addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+        
+    
+            var icon_e246bf5b3a3f4572a59fd0eb138bb971 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a9724031cff245b896cd42c923d7e8d4.setIcon(icon_e246bf5b3a3f4572a59fd0eb138bb971);
+        
+    
+        var popup_a4980d72f02246b88850c0da435347b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a4805d55fba4a48baf793c2ca7748ec = $(`<div id="html_7a4805d55fba4a48baf793c2ca7748ec" style="width: 100.0%; height: 100.0%;">Point2深圳市光明区茶林路 光明城站</div>`)[0];
+            popup_a4980d72f02246b88850c0da435347b6.setContent(html_7a4805d55fba4a48baf793c2ca7748ec);
+        
+
+        marker_a9724031cff245b896cd42c923d7e8d4.bindPopup(popup_a4980d72f02246b88850c0da435347b6)
+        ;
+
+        
+    
+    
+            marker_a9724031cff245b896cd42c923d7e8d4.bindTooltip(
+                `<div>
+                     Click me for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_181488ec39b740f8b786d0bbf97c8e31 = L.marker(
+                [22.751738, 113.932465],
+                {}
+            ).addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+        
+    
+            var icon_4c49705f6e57419989efcb7cb77c19c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_181488ec39b740f8b786d0bbf97c8e31.setIcon(icon_4c49705f6e57419989efcb7cb77c19c1);
+        
+    
+        var popup_72f016cce44c41519eaacf5104f8277a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_344f49e6863c4e8bb578ce128ca24371 = $(`<div id="html_344f49e6863c4e8bb578ce128ca24371" style="width: 100.0%; height: 100.0%;">Point3广东省深圳市光明区建安一路185号 光明街道</div>`)[0];
+            popup_72f016cce44c41519eaacf5104f8277a.setContent(html_344f49e6863c4e8bb578ce128ca24371);
+        
+
+        marker_181488ec39b740f8b786d0bbf97c8e31.bindPopup(popup_72f016cce44c41519eaacf5104f8277a)
+        ;
+
+        
+    
+    
+            marker_181488ec39b740f8b786d0bbf97c8e31.bindTooltip(
+                `<div>
+                     Click me for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45a2830d35b9451f9bd008e8c99c7d04 = L.marker(
+                [22.774683, 113.941333],
+                {}
+            ).addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+        
+    
+            var icon_20f054df2eca477dbb7d3468da6dbe90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_45a2830d35b9451f9bd008e8c99c7d04.setIcon(icon_20f054df2eca477dbb7d3468da6dbe90);
+        
+    
+        var popup_ef0452756e54400e98900578c7152783 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e272cf9b5b549bcb70cc015bd7106da = $(`<div id="html_4e272cf9b5b549bcb70cc015bd7106da" style="width: 100.0%; height: 100.0%;">Point4地铁6号线 光明</div>`)[0];
+            popup_ef0452756e54400e98900578c7152783.setContent(html_4e272cf9b5b549bcb70cc015bd7106da);
+        
+
+        marker_45a2830d35b9451f9bd008e8c99c7d04.bindPopup(popup_ef0452756e54400e98900578c7152783)
+        ;
+
+        
+    
+    
+            marker_45a2830d35b9451f9bd008e8c99c7d04.bindTooltip(
+                `<div>
+                     Click me for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87b367c4731e45d18905e7168489f6af = L.marker(
+                [22.739948, 113.924629],
+                {}
+            ).addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+        
+    
+            var icon_3d4fe29dc9e54648b7b79b5f8352dfb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87b367c4731e45d18905e7168489f6af.setIcon(icon_3d4fe29dc9e54648b7b79b5f8352dfb7);
+        
+    
+        var popup_a3b7d38c78804c10b2a545d51fdedcc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64fb2a63f69949748b68a711c4946453 = $(`<div id="html_64fb2a63f69949748b68a711c4946453" style="width: 100.0%; height: 100.0%;">Point5深圳市光明区同惠路与科农路交叉路口往西南约100米 光明1号</div>`)[0];
+            popup_a3b7d38c78804c10b2a545d51fdedcc7.setContent(html_64fb2a63f69949748b68a711c4946453);
+        
+
+        marker_87b367c4731e45d18905e7168489f6af.bindPopup(popup_a3b7d38c78804c10b2a545d51fdedcc7)
+        ;
+
+        
+    
+    
+            marker_87b367c4731e45d18905e7168489f6af.bindTooltip(
+                `<div>
+                     Click me for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f69f415811de4d228c4a25657b4ddd28 = L.marker(
+                [22.75179, 113.932297],
+                {}
+            ).addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+        
+    
+            var icon_d1341a08f4a34c21a54d41bb7d389e48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f69f415811de4d228c4a25657b4ddd28.setIcon(icon_d1341a08f4a34c21a54d41bb7d389e48);
+        
+    
+        var popup_9a439a6d1ed04c10a860daab18d544da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b59e3d3cd694be8a85e390c19cfc67d = $(`<div id="html_7b59e3d3cd694be8a85e390c19cfc67d" style="width: 100.0%; height: 100.0%;">Point6广东省深圳市 光明区</div>`)[0];
+            popup_9a439a6d1ed04c10a860daab18d544da.setContent(html_7b59e3d3cd694be8a85e390c19cfc67d);
+        
+
+        marker_f69f415811de4d228c4a25657b4ddd28.bindPopup(popup_9a439a6d1ed04c10a860daab18d544da)
+        ;
+
+        
+    
+    
+            marker_f69f415811de4d228c4a25657b4ddd28.bindTooltip(
+                `<div>
+                     Click me for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cb5d0d5c9b3467eb9c98fd14fcdb901 = L.marker(
+                [22.778807, 113.88988],
+                {}
+            ).addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+        
+    
+            var icon_12c2a5150d7940879e4726d0d853998c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6cb5d0d5c9b3467eb9c98fd14fcdb901.setIcon(icon_12c2a5150d7940879e4726d0d853998c);
+        
+    
+        var popup_7a2fa2d8d14848ea9f88786e932ecd2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7f2b36f62bc44eabe49784a2508d8d8 = $(`<div id="html_c7f2b36f62bc44eabe49784a2508d8d8" style="width: 100.0%; height: 100.0%;">Point7深圳市光明区马田街道合水口社区松白路4699号 大仟里购物中心(光明店)</div>`)[0];
+            popup_7a2fa2d8d14848ea9f88786e932ecd2f.setContent(html_c7f2b36f62bc44eabe49784a2508d8d8);
+        
+
+        marker_6cb5d0d5c9b3467eb9c98fd14fcdb901.bindPopup(popup_7a2fa2d8d14848ea9f88786e932ecd2f)
+        ;
+
+        
+    
+    
+            marker_6cb5d0d5c9b3467eb9c98fd14fcdb901.bindTooltip(
+                `<div>
+                     Click me for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_813822dbfdc2414687afa539d0f30f65 = L.marker(
+                [22.571762, 113.908047],
+                {}
+            ).addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+        
+    
+            var icon_24a10d4916d44255a45ad29d0397ca8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_813822dbfdc2414687afa539d0f30f65.setIcon(icon_24a10d4916d44255a45ad29d0397ca8f);
+        
+    
+        var popup_d86a52476a854cbba8b6ec91150e42d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6562db4be190435292f8d28c32288439 = $(`<div id="html_6562db4be190435292f8d28c32288439" style="width: 100.0%; height: 100.0%;">Point8深圳市宝安区公园路与兴华二路交叉路口往南约50米(宝湖居南侧) 光明</div>`)[0];
+            popup_d86a52476a854cbba8b6ec91150e42d0.setContent(html_6562db4be190435292f8d28c32288439);
+        
+
+        marker_813822dbfdc2414687afa539d0f30f65.bindPopup(popup_d86a52476a854cbba8b6ec91150e42d0)
+        ;
+
+        
+    
+    
+            marker_813822dbfdc2414687afa539d0f30f65.bindTooltip(
+                `<div>
+                     Click me for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_adf2ac0da99c4cb1bced1fcc9eed87be = L.marker(
+                [22.546716, 114.107617],
+                {}
+            ).addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+        
+    
+            var icon_ced51441cae54b70a75d0e321c3698b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_adf2ac0da99c4cb1bced1fcc9eed87be.setIcon(icon_ced51441cae54b70a75d0e321c3698b4);
+        
+    
+        var popup_a5df802e389b449eb69b078097e3aeb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0a5723b6ba2420393771ca36acd7f64 = $(`<div id="html_a0a5723b6ba2420393771ca36acd7f64" style="width: 100.0%; height: 100.0%;">Point9深圳市罗湖区宝安南路2014号振业大厦23层D 光明</div>`)[0];
+            popup_a5df802e389b449eb69b078097e3aeb7.setContent(html_a0a5723b6ba2420393771ca36acd7f64);
+        
+
+        marker_adf2ac0da99c4cb1bced1fcc9eed87be.bindPopup(popup_a5df802e389b449eb69b078097e3aeb7)
+        ;
+
+        
+    
+    
+            marker_adf2ac0da99c4cb1bced1fcc9eed87be.bindTooltip(
+                `<div>
+                     Click me for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34a1fc672a3f47668dee50b661f2698d = L.marker(
+                [22.765834, 113.940772],
+                {}
+            ).addTo(map_12a7c81e60fb4054a52d57b51b60fae2);
+        
+    
+            var icon_3b5b13117e5742a8a5400b053e1b5289 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34a1fc672a3f47668dee50b661f2698d.setIcon(icon_3b5b13117e5742a8a5400b053e1b5289);
+        
+    
+        var popup_798514e4a8a6403fa5510eba01d8eaa3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_459bd4e1d8b9474d9f7f847771bbd2af = $(`<div id="html_459bd4e1d8b9474d9f7f847771bbd2af" style="width: 100.0%; height: 100.0%;">Point10B949路;B966路;E39路;M206路;M215路;M356路;M451路;M525路;b963路;m218路;m525路;m532路;高快巴士25路;高快巴士33路;光明假日接驳专线2号;光明假日接驳专线3号;莞747路 光明中心站</div>`)[0];
+            popup_798514e4a8a6403fa5510eba01d8eaa3.setContent(html_459bd4e1d8b9474d9f7f847771bbd2af);
+        
+
+        marker_34a1fc672a3f47668dee50b661f2698d.bindPopup(popup_798514e4a8a6403fa5510eba01d8eaa3)
+        ;
+
+        
+    
+    
+            marker_34a1fc672a3f47668dee50b661f2698d.bindTooltip(
+                `<div>
+                     Click me for more information
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
